@@ -47,3 +47,45 @@ while True:
             elif choice2==4:
                 print("Returning to main... ")
                 break
+
+    if choice==3:
+        dictionary1={}
+        while True:
+            print("--- Dictionary Menu ---")
+            print("1. Add key value pair")
+            print("2. Delete key")
+            print("3. Display Dictionary")
+            print("4. Back to main menu")
+            choice2=int(input("Enter Choice: "))
+            if choice2==1:
+                choice3=input("Input key: ")
+                choice4=input("Input value: ")
+                dictionary1[choice3]=choice4
+            elif choice2==2:
+                choice3=input("Input key that you would like to delete: ")
+                dictionary1.pop(choice3)
+            elif choice2==3:
+                print(dictionary1)
+            elif choice2==4:
+                print("Returning to main... ")
+                break
+    if choice==4:
+        set1={}
+        while True:
+            print("--- Set Menu ---")
+            print("1. Add element")
+            print("2. Remove element")
+            print("3. Display Set")
+            print("4. Back to main menu")
+            choice2=int(input("Enter Choice: "))
+            if choice2==1:
+                choice3=input("Input element: ")
+                set1.add(choice3)
+            elif choice2==2:
+                choice3=input("Input element that you would like to delete: ")
+                set1.remove(choice3)
+            elif choice2==3:
+                print(set1)
+            elif choice2==4:
+                print("Returning to main... ")
+                break
